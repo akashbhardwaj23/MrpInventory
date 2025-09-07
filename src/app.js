@@ -3,6 +3,11 @@ import cors from "cors";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import { auth } from "./middlewares/auth";
+import authRoutes from "./routes/auth.route"
+import productRoutes from "./routes/products.route"
+import contactRoutes from "./routes/contact.route"
+import transactionRoutes from "./routes/transactions.route"
+import reportRoutes from "./routes/reports.route"
 
 const app = express();
 dotenv.config();
